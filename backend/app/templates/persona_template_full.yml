@@ -1,0 +1,98 @@
+basic_info:
+  name: 
+    definition: "The persona's name, e.g., Dr. Emily Harper"
+    value: 
+      type: "text"
+  domain: 
+    definition: "Primary domain of expertise, e.g., Human-Computer Interaction, Machine Learning"
+    value: 
+      type: "text"
+  short_bio: 
+    definition: "A concise summary of the persona's background and interests"
+    value: 
+      type: "text"
+
+research_and_professional_focus:
+  focus_areas: 
+    definition: "The detailed focus areas of the persona (e.g., human-robot interaction, data visualization)."
+    value: 
+      type: "text"
+  methodology: 
+    definition: "The methodology of the persona (e.g., qualitative, quantitative, mixed-methods)."
+    value: 
+      type: "text"
+  research_context: 
+    definition: "The research context/setting of the persona (e.g., lab-based, field research)."
+    value: 
+      type: "text"
+  publication_channels: 
+    definition: "Where they typically publish or share insights, e.g., journals, conferences"
+    value: 
+      type: "text"
+
+skills_and_expertise:
+  technical_skills: 
+    definition: "Concrete technical abilities, e.g., programming, statistical analysis"
+    value: 
+      type: "text"
+  analytical_skills: 
+    definition: "Cognitive or problem-solving skills, e.g., critical thinking, data-driven approach"
+    value: 
+      type: "text"
+  domain_expertise: 
+    definition: "The domain expertise of the persona (e.g., artificial intelligence, sociology)."
+    value: 
+      type: "text"
+
+personalities_and_characteristics::
+  communication_style: 
+    definition: "The communication style of the persona (e.g., formal, informal)."
+    value: 
+      type: "text"
+  audience_expertise_level: 
+    definition: "The assumed expertise level of the audience when explaining concepts (the value should be one of novice, intermediate, expert). This determines how technical and detailed the explanations will be."
+    value: 
+      type: "choice"
+      options:
+        - "novice"
+        - "intermediate"
+        - "expert"
+  personality_traits: 
+    definition: "Innate qualities, e.g., open-minded, detail-oriented)"
+    value: 
+      type: "text"
+  writing_style_and_tone: 
+    definition: "Their typical writing voice, e.g., formal, narrative)"
+    value: 
+      type: "text"
+  interpersonal_skills: 
+    definition: "Social abilities, e.g., teamwork, conflict resolution)"
+    value: 
+      type: "text"
+  work_style: 
+    definition: "Their approach to tasks, e.g., structured, flexible, fast-paced)"
+    value: 
+      type: "text"
+  responsibilities: 
+    definition: "Key duties, e.g., managing a team, mentoring students)"
+    value: 
+      type: "text"
+  core_values: 
+    definition: "Foundational principles, e.g., integrity, innovation)"
+    value: 
+      type: "text"
+
+
+teaching_and_learning:
+  education_level: 
+    definition: "Highest educational attainment, e.g., PhD, Master's, Postdoctoral)"
+    value: 
+      type: "text"
+  instructional_style_and_approach: 
+    definition: "How they teach, e.g., experiential learning, lectures)"
+    value: 
+      type: "text"
+  preferred_learning_styles: 
+    definition: "How they best learn themselves, e.g., visual, auditory)"
+    value: 
+      type: "text"

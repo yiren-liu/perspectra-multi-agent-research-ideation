@@ -1,0 +1,28 @@
+# Environment / secrets
+# Ignore real env files and any *.local; keep .env.example / .env.production templates tracked.
+.env
+*.local
+
+# Logs & runtime artifacts
+*.log
+logs/
+backend/temp/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Node / frontend
+node_modules/
+dist/
+dist-ssr/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

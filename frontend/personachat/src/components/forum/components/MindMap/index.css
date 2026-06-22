@@ -1,0 +1,84 @@
+.react-flow {
+  background-color: hsl(var(--mindmap-background));
+}
+
+.react-flow__node, .react-flow__node-default {
+  background-color: hsl(var(--mindmap-node));
+  color: #000000;
+  /* border: hsl(var(--mindmap-node-border)); */
+}
+
+.react-flow__handle {
+  background-color: hsl(var(--mindmap-handle));
+  border: hsl(var(--mindmap-handle-border));
+}
+
+/* Add your custom styles here */
+.react-flow__edge-path {
+  stroke-width: 1.5;
+  stroke: #ccc;
+}
+
+/* Style for edges with actions */
+.react-flow__edge.has-action-data .react-flow__edge-path {
+  stroke-width: 2;
+  stroke: #94a3b8;
+}
+
+/* Override tooltip styles for edge action tooltips */
+.action-tooltip {
+  max-width: 250px;
+  z-index: 1000;
+}
+
+/* Make action labels easier to click/hover */
+.action-label {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.05));
+}
+
+.action-label:hover {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 4px 3px rgba(0,0,0,0.07));
+}
+
+/* Ensure the icons are properly sized and aligned */
+.action-label svg {
+  min-width: 12px;
+  min-height: 12px;
+  vertical-align: middle;
+}
+
+/* Special styling for different action types */
+.react-flow__edge.action-agree .react-flow__edge-path {
+  stroke: var(--green-400, #4ade80);
+}
+
+.react-flow__edge.action-disagree .react-flow__edge-path {
+  stroke: var(--red-400, #f87171);
+}
+
+.react-flow__edge.action-question .react-flow__edge-path {
+  stroke: var(--purple-400, #c084fc);
+}
+
+.react-flow__edge.action-claim .react-flow__edge-path {
+  stroke: var(--yellow-400, #facc15);
+}
+
+.react-flow__edge.action-issue .react-flow__edge-path {
+  stroke: var(--orange-400, #fb923c);
+}
+
+.react-flow__edge.action-concede .react-flow__edge-path {
+  stroke: var(--blue-400, #60a5fa);
+}
+
+.react-flow__edge.action-withdraw .react-flow__edge-path {
+  stroke: var(--red-400, #f87171);
+} 
+
+.react-flow__edge.action-rebut .react-flow__edge-path {
+  stroke: var(--red-400, #f87171);
+} 

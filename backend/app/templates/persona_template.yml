@@ -1,0 +1,52 @@
+basic_info:
+  research_area: 
+    definition: "The research area and focus of the persona (e.g., HCI, machine learning, cognitive science)."
+    value: 
+      type: "text"
+  short_bio: 
+    definition: "A short bio of the persona. (~50 words)"
+    value: 
+      type: "text"
+
+research_and_professional_focus:
+  focus_areas: 
+    definition: "The detailed focus areas of the persona (e.g., human-robot interaction, data visualization)."
+    value: 
+      type: "text"
+  methodology: 
+    definition: "The methodology of the persona (e.g., qualitative, quantitative, mixed-methods)."
+    value: 
+      type: "text"
+  publication_channels: 
+    definition: "The publication channels of the persona. Specific journals, conferences, etc."
+    value: 
+      type: "text"
+
+skills_and_expertise:
+  technical_skills: 
+    definition: "The technical skills of the persona (e.g., programming, statistical analysis)."
+    value: 
+      type: "text"
+  analytical_skills: 
+    definition: "The analytical skills of the persona (e.g., problem-solving, critical thinking)."
+    value: 
+      type: "text"
+  domain_expertise: 
+    definition: "The domain expertise of the persona (e.g., artificial intelligence, sociology)."
+    value: 
+      type: "text"
+
+personalities_and_characteristics:
+  communication_style: 
+    definition: "The communication style of the persona (e.g., formal, informal)."
+    value: 
+      type: "text"
+  audience_expertise_level: 
+    definition: "The assumed expertise level of the audience when explaining concepts (the value should be one of novice, intermediate, expert). This determines how technical and detailed the explanations will be."
+    value: 
+      type: "choice"
+      options:
+        - "novice"
+        - "intermediate"
+        - "expert"
+

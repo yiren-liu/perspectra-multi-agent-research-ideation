@@ -1,0 +1,26 @@
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
+
+# Install necessary system dependencies
+RUN apt-get update && apt-get install -y \
+    pkg-config \
+    libmariadb-dev-compat \
+    libmariadb-dev \
+    gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install uv
+
+WORKDIR /app
+
+COPY ./requirements.prod.txt /app/requirements.txt
+
+RUN uv pip install --system -r requirements.txt
+
+COPY . /app
+
+# Copy the start script
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+
+# Set the entry point to the start script
+ENTRYPOINT ["/app/start.sh"]
